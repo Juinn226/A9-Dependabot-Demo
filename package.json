@@ -1,0 +1,12 @@
+{
+  "name": "a9-dependabot-demo",
+  "version": "1.0.0",
+  "description": "DevSecOps Assignment 9 SCA demonstration",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "lodash": "4.17.15"
+  }
+}
