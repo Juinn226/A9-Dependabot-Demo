@@ -1,10 +1,8 @@
 const http = require("node:http");
+const url = require("node:url");
 
 http.createServer((req, res) => {
-  const userInput = new URL(
-    req.url,
-    "http://localhost"
-  ).searchParams.get("code");
+  const userInput = url.parse(req.url, true).query.code;
 
   // INSECURE DEMO:
   // Never evaluate untrusted user input.
